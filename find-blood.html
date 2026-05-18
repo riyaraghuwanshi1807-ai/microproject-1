@@ -1,115 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Find Blood - LifeDrop</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo"><i class="fa-solid fa-droplet"></i> LifeDrop</div>
-    <ul class="nav-links">
+  <nav class="navbar" id="navbar">
+    <div class="logo"><div class="logo-icon"><i class="fa-solid fa-droplet"></i></div><span>LifeDrop</span></div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="donate.html">Donate</a></li>
       <li><a href="find-blood.html" class="active">Find Blood</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn-nav">Donate Now</a>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    <a href="donate.html" class="btn-nav ripple">Donate Now</a>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
   <section class="page-header">
-    <h1>Find Blood</h1>
-    <p>Search for available blood donors in your area</p>
+    <h1><i class="fa-solid fa-magnifying-glass"></i> Find Blood</h1>
+    <p>Search for available blood donors in your area instantly</p>
   </section>
 
   <section class="find-section">
-    <div class="search-box">
-      <h2>Search for Donors</h2>
+    <div class="search-box" data-aos="fade-up">
+      <h2><i class="fa-solid fa-magnifying-glass" style="color:var(--red)"></i> Search Donors</h2>
       <div class="search-form">
         <div class="form-group">
-          <label for="searchBlood">Blood Group Required *</label>
+          <label>Blood Group Required *</label>
           <select id="searchBlood">
-            <option value="">Select blood group</option>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
+            <option value="">All blood groups</option>
+            <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+            <option>O+</option><option>O-</option><option>AB+</option><option>AB-</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="searchCity">City *</label>
-          <input type="text" id="searchCity" placeholder="Enter your city" />
+          <label>City *</label>
+          <input type="text" id="searchCity" placeholder="Enter your city"/>
         </div>
-        <button class="btn-primary" onclick="searchDonors()">
-          <i class="fa-solid fa-magnifying-glass"></i> Search Donors
+        <button class="btn-primary ripple" onclick="searchDonors()">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
         </button>
       </div>
     </div>
 
-    <div id="searchResults" class="search-results"></div>
+    <div id="searchResults"></div>
 
-    <!-- Emergency Request -->
-    <div class="emergency-box">
+    <div class="emergency-box" data-aos="fade-up">
       <h2><i class="fa-solid fa-triangle-exclamation"></i> Emergency Blood Request</h2>
       <p>Need blood urgently? Submit an emergency request and we'll notify nearby donors immediately.</p>
       <form onsubmit="submitEmergency(event)">
         <div class="form-row">
-          <div class="form-group">
-            <label>Patient Name *</label>
-            <input type="text" id="patientName" placeholder="Enter patient name" required />
-          </div>
-          <div class="form-group">
-            <label>Blood Group *</label>
-            <select id="emergencyBlood" required>
-              <option value="">Select</option>
-              <option>A+</option><option>A-</option>
-              <option>B+</option><option>B-</option>
-              <option>O+</option><option>O-</option>
-              <option>AB+</option><option>AB-</option>
-            </select>
+          <div class="form-group"><label>Patient Name *</label><input type="text" placeholder="Enter patient name" required/></div>
+          <div class="form-group"><label>Blood Group *</label>
+            <select required><option value="">Select</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>O+</option><option>O-</option><option>AB+</option><option>AB-</option></select>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label>Hospital Name *</label>
-            <input type="text" id="hospitalName" placeholder="Enter hospital name" required />
-          </div>
-          <div class="form-group">
-            <label>Contact Number *</label>
-            <input type="tel" id="contactNum" placeholder="+91 XXXXX XXXXX" required />
-          </div>
+          <div class="form-group"><label>Hospital Name *</label><input type="text" placeholder="Enter hospital name" required/></div>
+          <div class="form-group"><label>Contact Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
         </div>
-        <div class="form-group full-width">
-          <label>Units Required *</label>
-          <input type="number" id="units" placeholder="Number of units" min="1" required />
-        </div>
-        <button type="submit" class="btn-danger full-btn">
-          <i class="fa-solid fa-bell"></i> Send Emergency Request
-        </button>
+        <div class="form-group"><label>Units Required *</label><input type="number" placeholder="Number of units needed" min="1" required/></div>
+        <button type="submit" class="btn-danger full-btn ripple"><i class="fa-solid fa-bell"></i> Send Emergency Request</button>
       </form>
       <div id="emergencySuccess" class="success-msg" style="display:none;">
-        <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-check success-icon"></i>
         <h3>Emergency Request Sent!</h3>
-        <p>Nearby donors have been notified. You will receive calls shortly.</p>
+        <p>Nearby donors have been notified. You will receive calls shortly. Stay calm.</p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>&copy; 2026 LifeDrop. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> to save lives.</p>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2026 LifeDrop. All rights reserved. Made with <i class="fa-solid fa-heart"></i> to save lives.</p></div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

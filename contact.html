@@ -1,99 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - LifeDrop</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo"><i class="fa-solid fa-droplet"></i> LifeDrop</div>
-    <ul class="nav-links">
+  <nav class="navbar" id="navbar">
+    <div class="logo"><div class="logo-icon"><i class="fa-solid fa-droplet"></i></div><span>LifeDrop</span></div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="donate.html">Donate</a></li>
       <li><a href="find-blood.html">Find Blood</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn-nav">Donate Now</a>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    <a href="donate.html" class="btn-nav ripple">Donate Now</a>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
   <section class="page-header">
-    <h1>Contact Us</h1>
-    <p>We're here to help — reach out anytime</p>
+    <h1><i class="fa-solid fa-envelope"></i> Contact Us</h1>
+    <p>We're here to help — reach out anytime, 24/7</p>
   </section>
 
   <section class="contact-section">
     <div class="contact-grid">
-
-      <!-- Contact Info -->
-      <div class="contact-info">
+      <div class="contact-info" data-aos="fade-right">
         <h2>Get In Touch</h2>
-        <p>Have questions about donating blood or need help finding a donor? Our team is available 24/7.</p>
+        <p>Have questions about donating blood or need help finding a donor? Our team is available 24/7 to assist you.</p>
         <div class="info-item">
-          <i class="fa-solid fa-phone"></i>
-          <div>
-            <h4>Phone</h4>
-            <p>+91 98765 43210</p>
-            <p>+91 11234 56789 (Emergency)</p>
-          </div>
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><h4>Phone</h4><p>+91 98765 43210</p><p>+91 11234 56789 (Emergency)</p></div>
         </div>
         <div class="info-item">
-          <i class="fa-solid fa-envelope"></i>
-          <div>
-            <h4>Email</h4>
-            <p>info@lifedrop.org</p>
-            <p>emergency@lifedrop.org</p>
-          </div>
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><h4>Email</h4><p>info@lifedrop.org</p><p>emergency@lifedrop.org</p></div>
         </div>
         <div class="info-item">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <h4>Address</h4>
-            <p>123 Health Avenue, Connaught Place</p>
-            <p>New Delhi - 110001, India</p>
-          </div>
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><h4>Address</h4><p>123 Health Avenue, Connaught Place</p><p>New Delhi - 110001, India</p></div>
         </div>
         <div class="info-item">
-          <i class="fa-solid fa-clock"></i>
-          <div>
-            <h4>Working Hours</h4>
-            <p>Mon - Sat: 8:00 AM - 8:00 PM</p>
-            <p>Emergency: 24/7</p>
-          </div>
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <div><h4>Working Hours</h4><p>Mon – Sat: 8:00 AM – 8:00 PM</p><p>Emergency: 24/7</p></div>
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="contact-form-box">
+      <div class="contact-form-box" data-aos="fade-left">
         <h2>Send a Message</h2>
         <form onsubmit="submitContact(event)">
-          <div class="form-group">
-            <label>Your Name *</label>
-            <input type="text" id="contactName" placeholder="Enter your name" required />
-          </div>
-          <div class="form-group">
-            <label>Email Address *</label>
-            <input type="email" id="contactEmail" placeholder="Enter your email" required />
-          </div>
-          <div class="form-group">
-            <label>Subject *</label>
-            <input type="text" id="contactSubject" placeholder="What is this about?" required />
-          </div>
-          <div class="form-group">
-            <label>Message *</label>
-            <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary full-btn">
-            <i class="fa-solid fa-paper-plane"></i> Send Message
-          </button>
+          <div class="form-group"><label>Your Name *</label><input type="text" placeholder="Enter your name" required/></div>
+          <div class="form-group"><label>Email Address *</label><input type="email" placeholder="Enter your email" required/></div>
+          <div class="form-group"><label>Subject *</label><input type="text" placeholder="What is this about?" required/></div>
+          <div class="form-group"><label>Message *</label><textarea rows="5" placeholder="Write your message here..." required></textarea></div>
+          <button type="submit" class="btn-primary full-btn ripple"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
         </form>
         <div id="contactSuccess" class="success-msg" style="display:none;">
-          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-check success-icon"></i>
           <h3>Message Sent!</h3>
           <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
         </div>
@@ -102,11 +69,8 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>&copy; 2026 LifeDrop. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> to save lives.</p>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2026 LifeDrop. All rights reserved. Made with <i class="fa-solid fa-heart"></i> to save lives.</p></div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

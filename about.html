@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - LifeDrop</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo"><i class="fa-solid fa-droplet"></i> LifeDrop</div>
-    <ul class="nav-links">
+  <nav class="navbar" id="navbar">
+    <div class="logo"><div class="logo-icon"><i class="fa-solid fa-droplet"></i></div><span>LifeDrop</span></div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="donate.html">Donate</a></li>
       <li><a href="find-blood.html">Find Blood</a></li>
       <li><a href="about.html" class="active">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn-nav">Donate Now</a>
-    <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    <a href="donate.html" class="btn-nav ripple">Donate Now</a>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
   <section class="page-header">
-    <h1>About LifeDrop</h1>
-    <p>Our mission, vision, and the team behind the cause</p>
+    <h1><i class="fa-solid fa-heart-pulse"></i> About LifeDrop</h1>
+    <p>Our mission, vision, and the passionate team behind the cause</p>
   </section>
 
-  <!-- Mission & Vision -->
   <section class="about-section">
     <div class="about-grid">
-      <div class="about-text">
+      <div class="about-text" data-aos="fade-right">
         <h2>Our Mission</h2>
-        <p>LifeDrop was founded with a single goal — to bridge the gap between blood donors and patients in need. Every year, millions of people require blood transfusions due to accidents, surgeries, and medical conditions. We make it easy to find donors and save lives.</p>
+        <p>LifeDrop was founded with a single goal — to bridge the gap between blood donors and patients in need. Every year, millions of people require blood transfusions due to accidents, surgeries, and medical conditions.</p>
         <p>We believe that no one should lose their life due to a shortage of blood. With a network of thousands of registered donors across India, we ensure that help is always just a call away.</p>
+        <p>Since 2020, we have facilitated over 4.5 million life-saving donations and continue to grow our community of heroes every single day.</p>
       </div>
-      <div class="about-image-box">
+      <div class="about-image-box" data-aos="fade-left">
         <i class="fa-solid fa-heart-pulse about-icon"></i>
         <h3>Saving Lives Since 2020</h3>
-        <p>Over 4.5 million lives saved through our platform</p>
+        <p>Over 4.5 million lives saved through our platform across 48 cities in India.</p>
       </div>
     </div>
   </section>
 
-  <!-- Values -->
   <section class="values-section">
-    <h2 class="section-title">Our Core Values</h2>
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Values</span>
+      <h2>Our Core Values</h2>
+      <p>The principles that guide everything we do at LifeDrop.</p>
+    </div>
     <div class="values-grid">
-      <div class="value-card">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="0">
         <i class="fa-solid fa-hand-holding-heart"></i>
         <h3>Compassion</h3>
         <p>We care deeply about every life and work tirelessly to connect donors with patients.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="100">
         <i class="fa-solid fa-shield-halved"></i>
         <h3>Safety</h3>
-        <p>All donations follow strict medical protocols to ensure safety for both donors and recipients.</p>
+        <p>All donations follow strict medical protocols to ensure safety for donors and recipients.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="200">
         <i class="fa-solid fa-users"></i>
         <h3>Community</h3>
         <p>We build a community of heroes who believe in giving back and saving lives.</p>
       </div>
-      <div class="value-card">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="300">
         <i class="fa-solid fa-bolt"></i>
         <h3>Speed</h3>
         <p>In emergencies, every second counts. We respond fast to connect donors immediately.</p>
@@ -70,26 +73,29 @@
     </div>
   </section>
 
-  <!-- Team -->
   <section class="team-section">
-    <h2 class="section-title">Meet Our Team</h2>
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Team</span>
+      <h2>Meet Our Team</h2>
+      <p>The passionate people working behind the scenes to save lives.</p>
+    </div>
     <div class="team-grid">
-      <div class="team-card">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
         <div class="team-avatar"><i class="fa-solid fa-user-doctor"></i></div>
         <h3>Dr. Arjun Mehta</h3>
         <p>Founder & Medical Director</p>
       </div>
-      <div class="team-card">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
         <div class="team-avatar"><i class="fa-solid fa-user-tie"></i></div>
         <h3>Sneha Kapoor</h3>
         <p>Operations Head</p>
       </div>
-      <div class="team-card">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
         <div class="team-avatar"><i class="fa-solid fa-user-nurse"></i></div>
         <h3>Dr. Priya Nair</h3>
         <p>Medical Advisor</p>
       </div>
-      <div class="team-card">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="300">
         <div class="team-avatar"><i class="fa-solid fa-laptop-code"></i></div>
         <h3>Ravi Kumar</h3>
         <p>Tech Lead</p>
@@ -97,19 +103,21 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Join Our Mission</h2>
-    <p>Be part of a movement that saves lives every single day.</p>
-    <a href="donate.html" class="btn-primary">Register as Donor</a>
+  <section class="cta-section" data-aos="fade-up">
+    <div class="cta-content">
+      <div class="cta-icon"><i class="fa-solid fa-droplet"></i></div>
+      <h2>Join Our Mission</h2>
+      <p>Be part of a movement that saves lives every single day. Register as a donor today.</p>
+      <div class="cta-buttons">
+        <a href="donate.html" class="btn-primary ripple"><i class="fa-solid fa-user-plus"></i> Register as Donor</a>
+        <a href="contact.html" class="btn-outline-white ripple"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    <div class="footer-bottom">
-      <p>&copy; 2026 LifeDrop. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> to save lives.</p>
-    </div>
+    <div class="footer-bottom"><p>&copy; 2026 LifeDrop. All rights reserved. Made with <i class="fa-solid fa-heart"></i> to save lives.</p></div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

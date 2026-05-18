@@ -3,136 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LifeDrop - Blood Donation</title>
+  <title>LifeDrop - Give Blood, Save Lives</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="logo">
-      <i class="fa-solid fa-droplet"></i> LifeDrop
+      <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+      <span>LifeDrop</span>
     </div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="donate.html">Donate</a></li>
       <li><a href="find-blood.html">Find Blood</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="donate.html" class="btn-nav">Donate Now</a>
-    <div class="hamburger" onclick="toggleMenu()">
-      <i class="fa-solid fa-bars"></i>
+    <a href="donate.html" class="btn-nav ripple">Donate Now</a>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>Give Blood, <span>Save Lives</span></h1>
-      <p>Every drop counts. Your donation can save up to 3 lives. Join thousands of heroes who donate blood and make a difference today.</p>
+    <div class="hero-content" data-aos="fade-right">
+      <div class="hero-badge"><i class="fa-solid fa-heart-pulse"></i> Saving Lives Every Day</div>
+      <h1>Give Blood,<br/><span class="gradient-text">Save Lives</span></h1>
+      <p>Every 2 seconds someone needs blood. Your single donation can save up to <strong>3 lives</strong>. Join thousands of heroes making a difference today.</p>
       <div class="hero-buttons">
-        <a href="donate.html" class="btn-primary">Become a Donor</a>
-        <a href="find-blood.html" class="btn-secondary">Find Blood</a>
+        <a href="donate.html" class="btn-primary ripple">
+          <i class="fa-solid fa-droplet"></i> Become a Donor
+        </a>
+        <a href="find-blood.html" class="btn-outline ripple">
+          <i class="fa-solid fa-magnifying-glass"></i> Find Blood
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> 100% Safe</div>
+        <div class="trust-item"><i class="fa-solid fa-clock"></i> 15 Min Process</div>
+        <div class="trust-item"><i class="fa-solid fa-award"></i> WHO Certified</div>
       </div>
     </div>
-    <div class="hero-image">
-      <div class="blood-drop-animation">
-        <i class="fa-solid fa-droplet"></i>
+    <div class="hero-visual" data-aos="fade-left">
+      <div class="glass-drop-wrapper">
+        <div class="glass-drop">
+          <div class="drop-inner">
+            <i class="fa-solid fa-droplet drop-icon"></i>
+            <span class="drop-text">O+</span>
+          </div>
+          <div class="drop-ring ring1"></div>
+          <div class="drop-ring ring2"></div>
+          <div class="drop-ring ring3"></div>
+        </div>
+        <div class="floating-badge badge1"><i class="fa-solid fa-heart"></i> 3 Lives Saved</div>
+        <div class="floating-badge badge2"><i class="fa-solid fa-check-circle"></i> Safe & Easy</div>
+        <div class="floating-badge badge3"><i class="fa-solid fa-users"></i> 12K+ Donors</div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stat-card">
-      <h2>4.5M+</h2>
+  <!-- Live Counter Section -->
+  <section class="counters">
+    <div class="counter-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="counter-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+      <h2 class="count-up" data-target="4500000">0</h2>
       <p>Lives Saved</p>
     </div>
-    <div class="stat-card">
-      <h2>12K+</h2>
+    <div class="counter-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="counter-icon"><i class="fa-solid fa-users"></i></div>
+      <h2 class="count-up" data-target="12000">0</h2>
       <p>Active Donors</p>
     </div>
-    <div class="stat-card">
-      <h2>8</h2>
-      <p>Blood Types</p>
+    <div class="counter-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="counter-icon"><i class="fa-solid fa-hospital"></i></div>
+      <h2 class="count-up" data-target="350">0</h2>
+      <p>Partner Hospitals</p>
     </div>
-    <div class="stat-card">
-      <h2>24/7</h2>
-      <p>Support Available</p>
+    <div class="counter-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="counter-icon"><i class="fa-solid fa-city"></i></div>
+      <h2 class="count-up" data-target="48">0</h2>
+      <p>Cities Covered</p>
     </div>
   </section>
 
   <!-- Blood Types Section -->
   <section class="blood-types">
-    <h2 class="section-title">Blood Types We Need</h2>
-    <p class="section-subtitle">All blood types are needed. Find out which type you are and how you can help.</p>
-    <div class="blood-grid">
-      <div class="blood-card">A+</div>
-      <div class="blood-card">A-</div>
-      <div class="blood-card">B+</div>
-      <div class="blood-card">B-</div>
-      <div class="blood-card urgent">O+</div>
-      <div class="blood-card urgent">O-</div>
-      <div class="blood-card">AB+</div>
-      <div class="blood-card">AB-</div>
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Blood Types</span>
+      <h2>All Types Are Needed</h2>
+      <p>Find your blood type and see how you can help save lives today.</p>
     </div>
-    <p class="urgent-note"><i class="fa-solid fa-triangle-exclamation"></i> O+ and O- are in urgent need</p>
+    <div class="blood-grid">
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="blood-circle">A+</div>
+        <p>Common</p>
+      </div>
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="50">
+        <div class="blood-circle rare">A-</div>
+        <p>Rare</p>
+      </div>
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="blood-circle">B+</div>
+        <p>Common</p>
+      </div>
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="150">
+        <div class="blood-circle rare">B-</div>
+        <p>Rare</p>
+      </div>
+      <div class="blood-card urgent" data-aos="zoom-in" data-aos-delay="200">
+        <div class="blood-circle urgent-circle">O+</div>
+        <p>Urgent Need</p>
+      </div>
+      <div class="blood-card urgent" data-aos="zoom-in" data-aos-delay="250">
+        <div class="blood-circle urgent-circle">O-</div>
+        <p>Critical Need</p>
+      </div>
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="blood-circle">AB+</div>
+        <p>Universal Recipient</p>
+      </div>
+      <div class="blood-card" data-aos="zoom-in" data-aos-delay="350">
+        <div class="blood-circle rare">AB-</div>
+        <p>Rarest Type</p>
+      </div>
+    </div>
+    <div class="urgent-banner" data-aos="fade-up">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <span>O+ and O- blood types are in <strong>critical shortage</strong> — your donation is urgently needed!</span>
+      <a href="donate.html" class="btn-sm ripple">Donate Now</a>
+    </div>
   </section>
 
   <!-- How It Works -->
   <section class="how-it-works">
-    <h2 class="section-title">How It Works</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-icon"><i class="fa-solid fa-user-plus"></i></div>
-        <h3>Register</h3>
-        <p>Sign up as a donor by filling out a simple registration form.</p>
-      </div>
-      <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-      <div class="step">
-        <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
-        <h3>Schedule</h3>
-        <p>Book an appointment at your nearest blood donation camp.</p>
-      </div>
-      <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-      <div class="step">
-        <div class="step-icon"><i class="fa-solid fa-syringe"></i></div>
-        <h3>Donate</h3>
-        <p>The donation process takes only 10–15 minutes of your time.</p>
-      </div>
-      <div class="step-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-      <div class="step">
-        <div class="step-icon"><i class="fa-solid fa-heart"></i></div>
-        <h3>Save Lives</h3>
-        <p>Your blood saves up to 3 lives and gives hope to families.</p>
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Process</span>
+      <h2>How It Works</h2>
+      <p>Donating blood is simple, safe, and takes just 15 minutes of your time.</p>
+    </div>
+    <div class="steps-container">
+      <div class="step-line"></div>
+      <div class="steps">
+        <div class="step" data-aos="fade-up" data-aos-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-icon"><i class="fa-solid fa-user-plus"></i></div>
+          <h3>Register</h3>
+          <p>Fill out a quick registration form with your basic details and blood group.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="150">
+          <div class="step-num">02</div>
+          <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Schedule</h3>
+          <p>Book an appointment at your nearest donation camp or blood bank.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-num">03</div>
+          <div class="step-icon"><i class="fa-solid fa-syringe"></i></div>
+          <h3>Donate</h3>
+          <p>The actual donation takes only 8–10 minutes. Relax and be a hero.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="450">
+          <div class="step-num">04</div>
+          <div class="step-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Save Lives</h3>
+          <p>Your blood saves up to 3 lives and gives hope to families in need.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Eligibility Section -->
+  <!-- Eligibility Checker -->
   <section class="eligibility">
-    <h2 class="section-title">Are You Eligible?</h2>
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Eligibility</span>
+      <h2>Can You Donate?</h2>
+      <p>Check if you meet the basic requirements to become a blood donor.</p>
+    </div>
     <div class="eligibility-grid">
-      <div class="eligible">
-        <h3><i class="fa-solid fa-circle-check"></i> You Can Donate If</h3>
+      <div class="elig-card can" data-aos="fade-right">
+        <div class="elig-header">
+          <div class="elig-icon can-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>You Can Donate</h3>
+        </div>
         <ul>
-          <li>Age between 18–65 years</li>
-          <li>Weight above 50 kg</li>
-          <li>Hemoglobin ≥ 12.5 g/dL</li>
-          <li>No major illness in last 6 months</li>
-          <li>Not donated in last 3 months</li>
+          <li><i class="fa-solid fa-check"></i> Age between 18–65 years</li>
+          <li><i class="fa-solid fa-check"></i> Weight above 50 kg</li>
+          <li><i class="fa-solid fa-check"></i> Hemoglobin ≥ 12.5 g/dL</li>
+          <li><i class="fa-solid fa-check"></i> No major illness in last 6 months</li>
+          <li><i class="fa-solid fa-check"></i> Not donated in last 3 months</li>
+          <li><i class="fa-solid fa-check"></i> Good general health</li>
         </ul>
       </div>
-      <div class="not-eligible">
-        <h3><i class="fa-solid fa-circle-xmark"></i> You Cannot Donate If</h3>
+      <div class="elig-card cannot" data-aos="fade-left">
+        <div class="elig-header">
+          <div class="elig-icon cannot-icon"><i class="fa-solid fa-circle-xmark"></i></div>
+          <h3>You Cannot Donate</h3>
+        </div>
         <ul>
-          <li>Currently pregnant or breastfeeding</li>
-          <li>Have HIV, Hepatitis B or C</li>
-          <li>Recently had surgery or tattoo</li>
-          <li>Taking certain medications</li>
-          <li>Have low blood pressure</li>
+          <li><i class="fa-solid fa-xmark"></i> Pregnant or breastfeeding</li>
+          <li><i class="fa-solid fa-xmark"></i> Have HIV, Hepatitis B or C</li>
+          <li><i class="fa-solid fa-xmark"></i> Recent surgery or tattoo (6 months)</li>
+          <li><i class="fa-solid fa-xmark"></i> Taking blood thinners</li>
+          <li><i class="fa-solid fa-xmark"></i> Low blood pressure or anemia</li>
+          <li><i class="fa-solid fa-xmark"></i> Recent travel to malaria zones</li>
         </ul>
       </div>
     </div>
@@ -140,61 +218,102 @@
 
   <!-- Testimonials -->
   <section class="testimonials">
-    <h2 class="section-title">Stories That Inspire</h2>
-    <div class="testimonial-grid">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Stories</span>
+      <h2>Stories That Inspire</h2>
+      <p>Real people, real impact. See how blood donation changes lives.</p>
+    </div>
+    <div class="testimonial-track" data-aos="fade-up">
       <div class="testimonial-card">
-        <p>"My daughter needed emergency blood after an accident. A stranger's donation saved her life. I will forever be grateful."</p>
-        <h4>— Priya Sharma</h4>
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p>"My daughter needed emergency blood after a road accident. A stranger's donation saved her life. I will be forever grateful to every donor out there."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <h4>Priya Sharma</h4>
+            <span>Mother, New Delhi</span>
+          </div>
+        </div>
       </div>
       <div class="testimonial-card">
-        <p>"I've been donating blood every 3 months for 5 years. It takes 15 minutes and can save someone's life. Why not?"</p>
-        <h4>— Rahul Verma</h4>
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p>"I've been donating blood every 3 months for 5 years. It takes 15 minutes and can save someone's life. The feeling of knowing you helped is priceless."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <h4>Rahul Verma</h4>
+            <span>Regular Donor, Mumbai</span>
+          </div>
+        </div>
       </div>
       <div class="testimonial-card">
-        <p>"As a thalassemia patient, I depend on regular blood transfusions. Donors are my lifeline."</p>
-        <h4>— Ananya Singh</h4>
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p>"As a thalassemia patient, I depend on regular blood transfusions to survive. Donors are not just heroes — they are my lifeline every single month."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <h4>Ananya Singh</h4>
+            <span>Patient, Bangalore</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="cta">
-    <h2>Ready to Be a Hero?</h2>
-    <p>Register today and be part of a community that saves lives every day.</p>
-    <a href="donate.html" class="btn-primary">Register as Donor</a>
+  <section class="cta-section" data-aos="fade-up">
+    <div class="cta-content">
+      <div class="cta-icon"><i class="fa-solid fa-droplet"></i></div>
+      <h2>Ready to Be a Hero?</h2>
+      <p>Join 12,000+ donors who are saving lives every day. Registration takes less than 2 minutes.</p>
+      <div class="cta-buttons">
+        <a href="donate.html" class="btn-primary ripple">
+          <i class="fa-solid fa-user-plus"></i> Register as Donor
+        </a>
+        <a href="find-blood.html" class="btn-outline-white ripple">
+          <i class="fa-solid fa-magnifying-glass"></i> Find Blood Now
+        </a>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-top">
       <div class="footer-brand">
-        <h3><i class="fa-solid fa-droplet"></i> LifeDrop</h3>
-        <p>Connecting donors with those in need. Every drop of blood is a gift of life.</p>
+        <div class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+          <span>LifeDrop</span>
+        </div>
+        <p>Connecting donors with those in need. Every drop of blood is a gift of life. Together we can save millions.</p>
         <div class="social-links">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="donate.html">Donate Blood</a></li>
-          <li><a href="find-blood.html">Find Blood</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate Blood</a></li>
+          <li><a href="find-blood.html"><i class="fa-solid fa-chevron-right"></i> Find Blood</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
         </ul>
       </div>
       <div class="footer-contact">
         <h4>Contact Us</h4>
-        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-        <p><i class="fa-solid fa-envelope"></i> info@lifedrop.org</p>
-        <p><i class="fa-solid fa-location-dot"></i> New Delhi, India</p>
+        <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+91 98765 43210</span></div>
+        <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>info@lifedrop.org</span></div>
+        <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>New Delhi, India</span></div>
+        <div class="contact-item"><i class="fa-solid fa-clock"></i><span>24/7 Emergency Support</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 LifeDrop. All rights reserved. | Made with <i class="fa-solid fa-heart"></i> to save lives.</p>
+      <p>&copy; 2026 LifeDrop. All rights reserved. Made with <i class="fa-solid fa-heart"></i> to save lives.</p>
+      <p><a href="https://riyaraghuwanshi1807-ai.github.io/microproject-1/" target="_blank">🌐 Live Site</a></p>
     </div>
   </footer>
 
