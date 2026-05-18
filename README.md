@@ -1,10 +1,18 @@
-# 🩸 LifeDrop - Blood Donation Website
+# 🩸 LifeDrop — Blood Donation Website
 
-🌐 **Live Website:** [https://riyaraghuwanshi1807-ai.github.io/microproject-1/](https://riyaraghuwanshi1807-ai.github.io/microproject-1/)
+<div align="center">
 
-> *"Every drop of blood donated is a gift of life. Be a hero today."* 🩸
+![LifeDrop Banner](https://img.shields.io/badge/LifeDrop-Blood%20Donation-E63946?style=for-the-badge&logo=heart&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-A fully responsive Blood Donation web application built with pure HTML5, CSS3, and Vanilla JavaScript. No frameworks, no build tools — just clean, fast, accessible web code.
+**🌐 Live Website: [https://riyaraghuwanshi1807-ai.github.io/microproject-1/](https://riyaraghuwanshi1807-ai.github.io/microproject-1/)**
+
+*"Every drop of blood donated is a gift of life. Be a hero today."* 🩸
+
+</div>
 
 ---
 
@@ -16,69 +24,88 @@ A fully responsive Blood Donation web application built with pure HTML5, CSS3, a
 4. [Project Structure](#-project-structure)
 5. [Pages & Sections](#-pages--sections)
 6. [Technologies Used](#-technologies-used)
-7. [JavaScript Functionality](#-javascript-functionality)
-8. [CSS Architecture](#-css-architecture)
-9. [Color Scheme](#-color-scheme)
-10. [Typography](#-typography)
-11. [Responsive Design](#-responsive-design)
-12. [Forms & Validation](#-forms--validation)
-13. [Donor Search System](#-donor-search-system)
-14. [Animations & Effects](#-animations--effects)
-15. [Eligibility Criteria](#-eligibility-criteria)
-16. [How to Run Locally](#-how-to-run-locally)
-17. [Deployment](#-deployment)
-18. [Future Improvements](#-future-improvements)
-19. [Author](#-author)
-20. [License](#-license)
+7. [UI Design & Theme](#-ui-design--theme)
+8. [Animations & Effects](#-animations--effects)
+9. [JavaScript Functions](#-javascript-functions)
+10. [CSS Architecture](#-css-architecture)
+11. [Color Scheme](#-color-scheme)
+12. [Typography](#-typography)
+13. [Responsive Design](#-responsive-design)
+14. [Forms & Validation](#-forms--validation)
+15. [Donor Search System](#-donor-search-system)
+16. [Eligibility Criteria](#-eligibility-criteria)
+17. [How to Run Locally](#-how-to-run-locally)
+18. [Deployment — GitHub Pages](#-deployment--github-pages)
+19. [Git Workflow](#-git-workflow)
+20. [Future Improvements](#-future-improvements)
+21. [Author](#-author)
+22. [License](#-license)
 
 ---
 
 ## 📌 Project Overview
 
-**LifeDrop** is a front-end blood donation platform designed to:
-- Connect blood **donors** with **patients** in need
-- Allow users to **register** as blood donors
-- Help people **search** for donors by blood group and city
-- Handle **emergency blood requests** with instant notifications
-- Educate users about blood donation **eligibility and process**
+**LifeDrop** is a modern, fully responsive blood donation web platform built with pure **HTML5, CSS3, and Vanilla JavaScript**. It is designed to:
 
-This is a **micro project** built as a static website, deployable on GitHub Pages with zero configuration.
+- Connect blood **donors** with **patients** in need
+- Allow users to **register** as blood donors with a validated form
+- Help people **search** for available donors by blood group and city
+- Handle **emergency blood requests** with instant confirmation
+- Educate users about blood donation **eligibility, process, and importance**
+
+> This is a **micro project** — a complete static website with zero dependencies, zero build tools, and zero frameworks. It runs directly in any browser and is deployed on GitHub Pages.
 
 ---
 
 ## 🌐 Live Demo
 
-| Link | Description |
-|---|---|
-| [🏠 Home Page](https://riyaraghuwanshi1807-ai.github.io/microproject-1/) | Landing page with all key info |
-| [💉 Donate Blood](https://riyaraghuwanshi1807-ai.github.io/microproject-1/donate.html) | Donor registration form |
-| [🔍 Find Blood](https://riyaraghuwanshi1807-ai.github.io/microproject-1/find-blood.html) | Search donors + emergency request |
-| [ℹ️ About Us](https://riyaraghuwanshi1807-ai.github.io/microproject-1/about.html) | Mission, values, team |
-| [📞 Contact](https://riyaraghuwanshi1807-ai.github.io/microproject-1/contact.html) | Contact form and info |
+| Page | URL | Description |
+|---|---|---|
+| 🏠 Home | [/](https://riyaraghuwanshi1807-ai.github.io/microproject-1/) | Landing page — hero, counters, blood types, steps, testimonials |
+| 💉 Donate | [/donate.html](https://riyaraghuwanshi1807-ai.github.io/microproject-1/donate.html) | Full donor registration form |
+| 🔍 Find Blood | [/find-blood.html](https://riyaraghuwanshi1807-ai.github.io/microproject-1/find-blood.html) | Donor search + emergency request |
+| ℹ️ About | [/about.html](https://riyaraghuwanshi1807-ai.github.io/microproject-1/about.html) | Mission, values, team |
+| 📞 Contact | [/contact.html](https://riyaraghuwanshi1807-ai.github.io/microproject-1/contact.html) | Contact info + message form |
 
 ---
 
 ## ✨ Features
 
-### Core Features
-- ✅ Fully responsive design — works on mobile, tablet, and desktop
-- ✅ 5 complete HTML pages with consistent navigation
-- ✅ Sticky navbar with active link highlighting
-- ✅ Mobile hamburger menu
-- ✅ Donor registration form with full validation
-- ✅ Blood donor search by blood group and city
-- ✅ Emergency blood request form
-- ✅ Contact form with success feedback
-- ✅ All 8 blood types displayed with urgent indicators (O+, O-)
-- ✅ 4-step donation process guide
-- ✅ Eligibility checker (can/cannot donate)
-- ✅ Testimonials section
-- ✅ Team section with member cards
-- ✅ Statistics counter section
-- ✅ Smooth scroll-triggered animations
-- ✅ Pulsing blood drop hero animation
-- ✅ FontAwesome 6.5 icons throughout
-- ✅ Footer with social links, quick links, contact info
+### 🎨 Design & UI
+- Modern **empathetic theme** — clean white with crimson red accents
+- **Glassmorphism** floating blood drop in the hero section
+- **Gradient text** on the main headline
+- **Inter font** (Google Fonts) for a premium, modern look
+- Consistent design language across all 5 pages
+- Polished cards, badges, and section tags
+
+### ⚡ Animations
+- **Floating glassmorphism blood drop** with 3 pulsing rings in the hero
+- **Count-up counters** — numbers animate from 0 when scrolled into view
+- **AOS (Animate On Scroll)** — custom implementation using IntersectionObserver
+- **Ripple effect** on every button click (liquid-fill animation)
+- **Pulsing glow** on O+ and O- urgent blood type cards
+- **Hover lift** on cards, steps, and team members
+- **Floating badges** around the hero blood drop
+
+### 🧭 Navigation
+- Sticky navbar with **glassmorphism blur** effect
+- Navbar gets shadow on scroll
+- **Active link underline** animation
+- Mobile **hamburger menu** with smooth toggle
+- "Donate Now" CTA button in navbar
+
+### 📄 Pages & Forms
+- 5 complete HTML pages
+- Donor registration form with 13 fields and full validation
+- Blood donor search (filter by group + city)
+- Emergency blood request form
+- Contact form with success feedback
+
+### 📱 Responsive
+- Works on all screen sizes — mobile, tablet, desktop
+- 3 breakpoints: 1024px, 900px, 768px, 480px
+- Hamburger menu on mobile
 
 ---
 
@@ -87,132 +114,129 @@ This is a **micro project** built as a static website, deployable on GitHub Page
 ```
 microproject-1/
 │
-├── index.html              # Home / Landing page
-├── donate.html             # Donor registration page
-├── find-blood.html         # Find blood & emergency request page
-├── about.html              # About us page
-├── contact.html            # Contact page
+├── index.html              # 🏠 Home / Landing page
+├── donate.html             # 💉 Donor registration page
+├── find-blood.html         # 🔍 Find blood & emergency request
+├── about.html              # ℹ️  About us — mission, values, team
+├── contact.html            # 📞 Contact page
 │
 ├── css/
-│   └── style.css           # All styles — layout, components, responsive
+│   └── style.css           # All styles (1000+ lines)
+│                           # Reset, variables, navbar, hero,
+│                           # counters, blood types, steps,
+│                           # eligibility, testimonials, CTA,
+│                           # footer, forms, animations, responsive
 │
 ├── js/
-│   └── main.js             # All JavaScript — forms, search, animations
+│   └── main.js             # All JavaScript (~150 lines)
+│                           # AOS, count-up, ripple, search,
+│                           # form handlers, navbar scroll
 │
-├── .nojekyll               # Disables Jekyll processing on GitHub Pages
-└── README.md               # Full project documentation
+├── .nojekyll               # Disables Jekyll on GitHub Pages
+└── README.md               # This documentation file
 ```
 
 ---
 
 ## 📄 Pages & Sections
 
-### 1. 🏠 Home Page (`index.html`)
+### 1. 🏠 Home Page — `index.html`
 
-| Section | Description |
+| Section | Details |
 |---|---|
-| **Navbar** | Sticky top nav with logo, links, "Donate Now" CTA button, hamburger for mobile |
-| **Hero** | Full-screen hero with headline, description, two CTA buttons, animated blood drop icon |
-| **Stats** | 4 stat cards — 4.5M+ Lives Saved, 12K+ Donors, 8 Blood Types, 24/7 Support |
-| **Blood Types** | 8 circular blood type cards (O+ and O- pulse with urgent animation) |
-| **How It Works** | 4-step process — Register → Schedule → Donate → Save Lives |
-| **Eligibility** | Two-column grid — who can and cannot donate |
-| **Testimonials** | 3 story cards from donors and recipients |
-| **CTA** | Red gradient call-to-action section with register button |
-| **Footer** | Brand info, quick links, contact details, social icons |
+| **Navbar** | Sticky, glassmorphism blur, logo with icon, nav links with underline animation, "Donate Now" button, hamburger |
+| **Hero** | Full-viewport hero, gradient background, badge pill, gradient headline, description, 2 CTA buttons, trust indicators, glassmorphism blood drop with floating badges |
+| **Counters** | Dark gradient section — 4.5M+ Lives Saved, 12K+ Donors, 350 Hospitals, 48 Cities — all count up on scroll |
+| **Blood Types** | 8 circular cards — A+, A-, B+, B-, O+, O-, AB+, AB- — O+ and O- pulse with urgent glow animation |
+| **How It Works** | 4-step process with numbered icons and a connecting line — Register → Schedule → Donate → Save Lives |
+| **Eligibility** | Two-column card — green "Can Donate" list and red "Cannot Donate" list |
+| **Testimonials** | 3 story cards with quote icon, italic text, author avatar and name |
+| **CTA** | Full-width red gradient section with two action buttons |
+| **Footer** | Brand description, social icons, quick links, contact info, copyright |
 
 ---
 
-### 2. 💉 Donate Blood Page (`donate.html`)
+### 2. 💉 Donate Blood — `donate.html`
 
-A complete donor registration form with the following fields:
+Full donor registration form with these fields:
 
-| Field | Type | Validation |
+| Field | Input Type | Validation |
 |---|---|---|
-| First Name | Text | Required |
-| Last Name | Text | Required |
-| Email Address | Email | Required, valid format |
-| Phone Number | Tel | Required |
-| Age | Number | Required, 18–65 |
-| Gender | Select | Required |
-| Blood Group | Select | Required (A+/A-/B+/B-/O+/O-/AB+/AB-) |
-| Weight | Number | Required, min 50 kg |
-| Address | Text | Required |
-| City | Text | Required |
-| Last Donation Date | Date | Optional |
-| Medical Conditions | Textarea | Optional |
-| Agreement Checkbox | Checkbox | Required |
+| First Name | `text` | Required |
+| Last Name | `text` | Required |
+| Email Address | `email` | Required, valid email format |
+| Phone Number | `tel` | Required |
+| Age | `number` | Required, min 18, max 65 |
+| Gender | `select` | Required |
+| Blood Group | `select` | Required — all 8 types |
+| Weight (kg) | `number` | Required, min 50 |
+| Full Address | `text` | Required |
+| City | `text` | Required |
+| Last Donation Date | `date` | Optional |
+| Medical Conditions | `textarea` | Optional |
+| Agreement Checkbox | `checkbox` | Required |
 
-On successful submission:
-- Form hides
-- Green success message appears with confirmation text
-- "Back to Home" button shown
+**On Submit:** Form hides → green success message with checkmark icon appears → "Back to Home" button shown.
 
 ---
 
-### 3. 🔍 Find Blood Page (`find-blood.html`)
+### 3. 🔍 Find Blood — `find-blood.html`
 
-**Donor Search:**
-- Filter by blood group (dropdown) and city (text input)
-- Searches a mock database of 8 donors
-- Results show donor name, blood group badge, city, last donation date, and a "Contact" button
-- Shows "No donors found" message if no match
+**Donor Search Box:**
+- Dropdown: blood group (all 8 types)
+- Text input: city name (partial match)
+- Search button triggers `searchDonors()` in JS
+- Results rendered as donor cards with name, blood badge, city, last donated, contact button
 
-**Mock Donor Database:**
+**Mock Donor Database (8 donors):**
 
-| Name | Blood Group | City |
-|---|---|---|
-| Amit Sharma | O+ | Delhi |
-| Priya Verma | A+ | Mumbai |
-| Rahul Singh | B+ | Bangalore |
-| Sneha Patel | O- | Delhi |
-| Vikram Nair | AB+ | Chennai |
-| Ananya Gupta | A- | Hyderabad |
-| Rohan Mehta | B- | Delhi |
-| Kavya Reddy | AB- | Pune |
+| Name | Blood | City | Last Donated |
+|---|---|---|---|
+| Amit Sharma | O+ | Delhi | 3 months ago |
+| Priya Verma | A+ | Mumbai | 4 months ago |
+| Rahul Singh | B+ | Bangalore | 2 months ago |
+| Sneha Patel | O- | Delhi | 5 months ago |
+| Vikram Nair | AB+ | Chennai | 6 months ago |
+| Ananya Gupta | A- | Hyderabad | 3 months ago |
+| Rohan Mehta | B- | Delhi | 4 months ago |
+| Kavya Reddy | AB- | Pune | 2 months ago |
 
 **Emergency Blood Request Form:**
 
-| Field | Type |
-|---|---|
-| Patient Name | Text |
-| Blood Group | Select |
-| Hospital Name | Text |
-| Contact Number | Tel |
-| Units Required | Number |
+| Field | Type | Validation |
+|---|---|---|
+| Patient Name | `text` | Required |
+| Blood Group | `select` | Required |
+| Hospital Name | `text` | Required |
+| Contact Number | `tel` | Required |
+| Units Required | `number` | Required, min 1 |
 
-On submission — success message confirms emergency request sent.
-
----
-
-### 4. ℹ️ About Us Page (`about.html`)
-
-| Section | Description |
-|---|---|
-| **Mission** | Two-paragraph mission statement with decorative icon box |
-| **Core Values** | 4 value cards — Compassion, Safety, Community, Speed |
-| **Team** | 4 team member cards with avatar icons and roles |
-| **CTA** | Register as donor call-to-action |
-
-**Team Members:**
-- Dr. Arjun Mehta — Founder & Medical Director
-- Sneha Kapoor — Operations Head
-- Dr. Priya Nair — Medical Advisor
-- Ravi Kumar — Tech Lead
+**On Submit:** Form hides → success message confirms emergency request sent to nearby donors.
 
 ---
 
-### 5. 📞 Contact Page (`contact.html`)
+### 4. ℹ️ About Us — `about.html`
 
-**Contact Information displayed:**
+| Section | Details |
+|---|---|
+| **Mission** | Two-column layout — text on left, decorative icon box on right |
+| **Core Values** | 4-card grid — Compassion, Safety, Community, Speed |
+| **Team** | 4-card grid — Dr. Arjun Mehta, Sneha Kapoor, Dr. Priya Nair, Ravi Kumar |
+| **CTA** | Red gradient section — Register + Contact buttons |
+
+---
+
+### 5. 📞 Contact — `contact.html`
+
+**Contact Info (left column):**
 - Phone: +91 98765 43210 / +91 11234 56789 (Emergency)
 - Email: info@lifedrop.org / emergency@lifedrop.org
 - Address: 123 Health Avenue, Connaught Place, New Delhi
 - Hours: Mon–Sat 8AM–8PM, Emergency 24/7
 
-**Contact Form Fields:**
-- Name, Email, Subject, Message (all required)
-- Success message shown on submit
+**Contact Form (right column):**
+- Name, Email, Subject, Message — all required
+- On submit: form hides, success message shown
 
 ---
 
@@ -220,256 +244,377 @@ On submission — success message confirms emergency request sent.
 
 | Technology | Version | Purpose |
 |---|---|---|
-| HTML5 | Latest | Semantic page structure and markup |
-| CSS3 | Latest | Styling, layout, animations, responsiveness |
-| JavaScript | ES6+ | DOM manipulation, form handling, search logic |
-| FontAwesome | 6.5.0 | Icons (via CDN) |
-| CSS Grid | Native | Multi-column page layouts |
-| CSS Flexbox | Native | Navigation, cards, step layouts |
-| CSS Custom Properties | Native | Color variables and theming |
-| IntersectionObserver API | Native | Scroll-triggered fade-in animations |
-| CSS Animations | Native | Pulsing blood drop, hover effects |
+| **HTML5** | Latest | Semantic page structure, forms, accessibility |
+| **CSS3** | Latest | Layout, animations, glassmorphism, gradients |
+| **JavaScript** | ES6+ | DOM manipulation, forms, search, animations |
+| **Google Fonts — Inter** | Latest | Modern, clean typography (via CDN) |
+| **FontAwesome** | 6.5.0 | Icons throughout all pages (via CDN) |
+| **CSS Grid** | Native | Multi-column layouts (counters, blood types, team) |
+| **CSS Flexbox** | Native | Navbar, hero, steps, buttons |
+| **CSS Custom Properties** | Native | Design tokens — colors, shadows, radii |
+| **CSS Animations** | Native | Glassmorphism float, ring pulse, badge float |
+| **IntersectionObserver API** | Native | AOS scroll animations + count-up trigger |
+| **requestAnimationFrame** | Native | Smooth count-up number animation |
+
+> No npm, no webpack, no React, no jQuery. Pure web standards only.
 
 ---
 
-## ⚙️ JavaScript Functionality
+## 🎨 UI Design & Theme
 
-All JavaScript is in `js/main.js`. Key functions:
+The site uses the **Modern & Empathetic Theme**:
 
-### `toggleMenu()`
-- Toggles the `.open` class on `.nav-links`
-- Shows/hides the mobile navigation menu
+- **Background:** Clean white (`#ffffff`) with soft pink/pastel red gradients (`#fff5f5` → `#ffe8e8`)
+- **Primary accent:** Vibrant crimson red (`#E63946`)
+- **Hero:** Glassmorphism floating blood drop with backdrop blur, pulsing rings, and floating info badges
+- **Counters:** Dark gradient section (`#1a1a2e`) for contrast
+- **Cards:** White with subtle shadow, hover lift effect
+- **Buttons:** Gradient red with ripple click effect
+- **Section tags:** Small pill badges in pink background
+- **Footer:** Dark navy with subtle social icon hover
 
-### `submitDonation(e)`
-- Prevents default form submission
-- Hides the registration form
-- Shows the success message div
+---
 
-### `submitContact(e)`
-- Handles contact form submission
-- Shows success confirmation
+## ✨ Animations & Effects
 
-### `submitEmergency(e)`
-- Handles emergency blood request
-- Shows emergency confirmation message
+### 1. Glassmorphism Blood Drop (Hero)
+```css
+.glass-drop {
+  background: linear-gradient(135deg, rgba(230,57,70,0.15), rgba(230,57,70,0.05));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(230,57,70,0.2);
+  animation: floatDrop 4s ease-in-out infinite;
+}
+```
+- Floats up and down every 4 seconds
+- 3 concentric rings pulse outward around it
+- 3 floating info badges animate independently
 
-### `searchDonors()`
-- Reads blood group and city input values
-- Filters the `mockDonors` array
-- Dynamically renders donor cards into `#searchResults`
-- Shows "no results" message if nothing found
+### 2. Count-Up Counters
+```javascript
+function animateCounter(el) {
+  const target = parseInt(el.getAttribute('data-target'));
+  // Uses requestAnimationFrame + cubic easing
+  // Formats: 4500000 → "4.5M+", 12000 → "12K+"
+}
+```
+- Triggered by IntersectionObserver when section enters viewport
+- Runs only once per page load (`data-counted` flag)
+- Eased with `1 - Math.pow(1 - progress, 3)` for smooth deceleration
 
-### Scroll Animation (IntersectionObserver)
-- Observes `.stat-card`, `.blood-card`, `.step`, `.value-card`, `.team-card`, `.testimonial-card`
-- Sets initial `opacity: 0` and `translateY(20px)`
-- Animates to `opacity: 1` and `translateY(0)` when element enters viewport
+### 3. AOS — Animate On Scroll
+```javascript
+function initAOS() {
+  // Custom IntersectionObserver implementation
+  // Supports: fade-up, fade-right, fade-left, zoom-in
+  // Supports: data-aos-delay for staggered animations
+}
+```
+CSS classes applied:
+- `[data-aos="fade-up"]` → `translateY(30px)` → `translateY(0)`
+- `[data-aos="fade-right"]` → `translateX(-30px)` → `translateX(0)`
+- `[data-aos="fade-left"]` → `translateX(30px)` → `translateX(0)`
+- `[data-aos="zoom-in"]` → `scale(0.85)` → `scale(1)`
+
+### 4. Ripple Effect on Buttons
+```javascript
+btn.addEventListener('click', function(e) {
+  // Creates a span at click position
+  // Animates scale(0) → scale(2.5) with opacity fade
+  // Removes itself after 600ms
+});
+```
+
+### 5. Urgent Blood Type Pulse
+```css
+@keyframes urgentPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); }
+  50%       { box-shadow: 0 0 0 15px rgba(230,57,70,0); }
+}
+```
+Applied to O+ and O- blood type cards continuously.
+
+### 6. Floating Badges
+Three info badges around the hero blood drop float independently with staggered delays (0s, 1s, 2s).
+
+### 7. Navbar Scroll Effect
+```javascript
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+```
+Adds shadow and reduces padding when user scrolls past 50px.
+
+---
+
+## ⚙️ JavaScript Functions
+
+All code lives in `js/main.js`:
+
+| Function | Trigger | What It Does |
+|---|---|---|
+| `toggleMenu()` | Hamburger click | Toggles `.open` on nav links and hamburger |
+| `initAOS()` | DOMContentLoaded | Sets up IntersectionObserver for all `[data-aos]` elements |
+| `initCounters()` | DOMContentLoaded | Observes `.count-up` elements, triggers `animateCounter()` |
+| `animateCounter(el)` | IntersectionObserver | Counts from 0 to target using rAF + easing |
+| `formatNumber(num)` | Inside counter | Formats 4500000 → "4.5M+", 12000 → "12K+" |
+| `initRipple()` | DOMContentLoaded | Adds click ripple to all `.ripple` elements |
+| `submitDonation(e)` | Form submit | Hides form, shows success message |
+| `submitContact(e)` | Form submit | Hides form, shows success message |
+| `submitEmergency(e)` | Form submit | Hides form, shows success message |
+| `searchDonors()` | Button click | Filters `mockDonors` array, renders donor cards |
 
 ---
 
 ## 🎨 CSS Architecture
 
-`css/style.css` is organized into these sections:
+`css/style.css` is organized into labeled sections:
 
 ```
-1.  Reset & Base Styles
-2.  CSS Custom Properties (variables)
-3.  Navbar
-4.  Buttons (.btn-primary, .btn-secondary, .btn-danger)
-5.  Hero Section
-6.  Stats Section
-7.  Section Titles
-8.  Blood Types Grid
-9.  How It Works / Steps
-10. Eligibility Grid
-11. Testimonials
-12. CTA Section
-13. Footer
-14. Page Header (inner pages)
-15. Forms (donate, contact, emergency)
-16. Success Messages
-17. Find Blood / Search
-18. Donor Cards
-19. Emergency Box
-20. About Page Sections
-21. Contact Page Layout
-22. Responsive Media Queries
+Section 1  — Reset & Base (*, html, body, a, ul)
+Section 2  — CSS Custom Properties (:root variables)
+Section 3  — Navbar (sticky, glassmorphism, scroll effect)
+Section 4  — Buttons (primary, outline, outline-white, danger, sm, ripple)
+Section 5  — Hero (layout, gradient bg, badge, gradient text)
+Section 6  — Glassmorphism Blood Drop (glass-drop, rings, float animation)
+Section 7  — Floating Badges (badge1, badge2, badge3)
+Section 8  — Counters (dark grid, count cards)
+Section 9  — Section Headers (section-tag, h2, subtitle)
+Section 10 — Blood Types (grid, circles, urgent pulse animation)
+Section 11 — How It Works (steps grid, step-line, step icons)
+Section 12 — Eligibility (two-column cards, can/cannot lists)
+Section 13 — Testimonials (grid, quote icon, author)
+Section 14 — CTA Section (gradient background, buttons)
+Section 15 — Footer (top grid, social links, bottom bar)
+Section 16 — Page Header (inner page banner)
+Section 17 — Forms (form-container, form-row, inputs, focus states)
+Section 18 — Success Messages
+Section 19 — Find Blood (search box, search form)
+Section 20 — Donor Cards
+Section 21 — Emergency Box
+Section 22 — About Page (about-grid, values, team)
+Section 23 — Contact Page (contact-grid, info-items)
+Section 24 — AOS Animation Classes
+Section 25 — Responsive Media Queries (1024px, 900px, 768px, 480px)
 ```
 
 ---
 
 ## 🎨 Color Scheme
 
-| Name | Hex Code | Used For |
-|---|---|---|
-| Primary Red | `#e63946` | Buttons, icons, accents, borders |
-| Dark Red | `#c1121f` | Hover states, emergency elements |
-| Light Red | `#ff6b6b` | Gradient accents |
-| Dark Navy | `#1a1a2e` | Headings, footer background |
-| Light Gray | `#f8f9fa` | Alternate section backgrounds |
-| Medium Gray | `#6c757d` | Body text, subtitles |
-| White | `#ffffff` | Cards, forms, navbar |
-| Success Green | `#2d6a4f` | Eligibility checks, success messages |
+| Name | Hex | CSS Variable | Used For |
+|---|---|---|---|
+| Primary Red | `#E63946` | `--red` | Buttons, icons, accents, borders |
+| Dark Red | `#c1121f` | `--dark-red` | Hover states, gradients, emergency |
+| Light Red | `#ff6b6b` | `--light-red` | Gradient accents |
+| Pink Light | `#fff0f0` | `--pink-light` | Card backgrounds, badges |
+| Pink Mid | `#ffd6d6` | `--pink-mid` | Borders, dividers |
+| Dark Navy | `#1a1a2e` | `--dark` | Headings, footer, counter section |
+| Off White | `#fafafa` | `--off-white` | Page background, testimonial cards |
+| Light Gray | `#f4f6f8` | `--light-gray` | Section backgrounds |
+| Medium Gray | `#6c757d` | `--gray` | Body text, subtitles |
+| Success Green | `#2d6a4f` | — | Eligibility checks, success messages |
 
 ---
 
 ## 🔤 Typography
 
-- **Font Family:** `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
-- **Base font size:** 16px (browser default)
-- **Heading sizes:** 3.5rem (hero) → 2.5rem (section) → 1.8rem (subsection)
-- **Body text:** 1rem / 1.05rem
-- **Line height:** 1.6 (body), 1.8 (paragraphs)
-- **Font weights:** 400 (body), 500 (nav), 600 (labels/buttons), 700–800 (headings)
+| Property | Value |
+|---|---|
+| **Primary Font** | `Inter` (Google Fonts CDN) |
+| **Fallback** | `'Segoe UI', sans-serif` |
+| **Base Size** | 16px |
+| **Hero H1** | 4rem, weight 900 |
+| **Section H2** | 2.4rem, weight 800 |
+| **Card H3** | 1.1–1.2rem, weight 700 |
+| **Body Text** | 1rem, weight 400 |
+| **Labels** | 0.9rem, weight 600 |
+| **Line Height** | 1.6 (body), 1.8 (paragraphs), 1.1 (headings) |
 
 ---
 
 ## 📱 Responsive Design
 
-The site uses a **mobile-first approach** with two main breakpoints:
+The site uses **4 breakpoints**:
 
-### Breakpoint: 900px (Tablet)
-- Hero section stacks vertically (text above, image below)
-- Hero text centered
-- Eligibility grid becomes single column
-- About grid becomes single column
-- Contact grid becomes single column
-- Footer grid becomes single column
-- Steps layout becomes vertical with rotated arrows
-
-### Breakpoint: 768px (Mobile)
-- Navbar links hidden, hamburger menu shown
-- "Donate Now" button hidden from navbar
-- Form rows become single column
-- Search form becomes vertical stack
-- All grids collapse to single column
+| Breakpoint | Layout Changes |
+|---|---|
+| **≤ 1024px** | Counters → 2×2 grid; values/team → 2 columns |
+| **≤ 900px** | Hero stacks vertically; blood drop shrinks; steps → 2 columns; eligibility/about/contact → 1 column; footer → 1 column |
+| **≤ 768px** | Hamburger menu shown; "Donate Now" hidden; form rows → 1 column; search form → vertical |
+| **≤ 480px** | Blood circles shrink; values/team → 1 column; hero H1 → 2rem |
 
 ---
 
 ## 📝 Forms & Validation
 
-All forms use **HTML5 native validation**:
-- `required` attribute on mandatory fields
-- `type="email"` for email format validation
-- `type="number"` with `min`/`max` for age and weight
-- `type="tel"` for phone numbers
-- Custom checkbox agreement required before submit
+All forms use **HTML5 native validation** — no external library needed:
 
-No external validation library is used — keeping it lightweight.
+| Attribute | Used On | Purpose |
+|---|---|---|
+| `required` | All mandatory fields | Prevents empty submission |
+| `type="email"` | Email fields | Validates email format |
+| `type="number"` | Age, weight, units | Numeric input only |
+| `min` / `max` | Age (18–65), weight (50+) | Range validation |
+| `type="tel"` | Phone fields | Telephone input mode |
+| `type="date"` | Last donation date | Date picker |
+| `type="checkbox"` | Agreement | Must be checked to submit |
+
+Focus state: `border-color: var(--red)` + `box-shadow: 0 0 0 4px rgba(230,57,70,0.08)`
 
 ---
 
 ## 🔍 Donor Search System
 
-The search works client-side using a hardcoded `mockDonors` array:
+Client-side search using a hardcoded `mockDonors` array in `main.js`:
 
 ```javascript
 const mockDonors = [
-  { name, blood, city, phone, lastDonated }
-  // 8 entries covering all blood types and major Indian cities
+  { name: 'Amit Sharma',  blood: 'O+',  city: 'Delhi',     phone: '+91 98765 11111', lastDonated: '3 months ago' },
+  { name: 'Priya Verma',  blood: 'A+',  city: 'Mumbai',    phone: '+91 98765 22222', lastDonated: '4 months ago' },
+  // ... 8 total donors
 ];
 ```
 
-**Search logic:**
-- If blood group selected → filter by exact match
-- If city entered → filter by case-insensitive partial match
-- Both filters applied together with AND logic
-- Results rendered as HTML donor cards dynamically
+**Search Logic:**
+```javascript
+const filtered = mockDonors.filter(d => {
+  const matchBlood = bloodGroup ? d.blood === bloodGroup : true;   // exact match
+  const matchCity  = city ? d.city.toLowerCase().includes(city) : true; // partial match
+  return matchBlood && matchCity; // AND logic
+});
+```
 
----
-
-## ✨ Animations & Effects
-
-| Animation | Element | Type |
-|---|---|---|
-| Pulsing blood drop | Hero icon | CSS `@keyframes pulse` — scale 1 → 1.08 |
-| Urgent blood types | O+, O- cards | Same pulse animation, 1.5s loop |
-| Scroll fade-in | Cards, steps, stats | IntersectionObserver + CSS transition |
-| Hover lift | Value cards, team cards | `translateY(-5px)` on hover |
-| Hover scale | Blood type cards | `scale(1.1)` on hover |
-| Button hover | All buttons | Background color change + `translateY(-2px)` |
-| Nav link hover | All nav links | Color change to red |
+**Result rendering:** Dynamic HTML injected into `#searchResults` div with donor cards showing blood badge, name, city, last donated, and a `tel:` contact link.
 
 ---
 
 ## 🩸 Eligibility Criteria
 
 ### ✅ You CAN Donate If:
-- Age is between **18 and 65 years**
-- Weight is **above 50 kg**
-- Hemoglobin level is **≥ 12.5 g/dL**
+- Age between **18 and 65 years**
+- Weight **above 50 kg**
+- Hemoglobin **≥ 12.5 g/dL**
 - No major illness in the **last 6 months**
 - Have **not donated** in the last **3 months**
+- In **good general health**
 
 ### ❌ You CANNOT Donate If:
 - Currently **pregnant or breastfeeding**
 - Have **HIV, Hepatitis B or C**
-- Recently had **surgery or a tattoo**
-- Taking **certain medications** (blood thinners, etc.)
-- Have **low blood pressure**
+- Recent **surgery or tattoo** (within 6 months)
+- Taking **blood thinners** or certain medications
+- Have **low blood pressure or anemia**
+- Recently traveled to **malaria-endemic zones**
 
 ---
 
 ## 🚀 How to Run Locally
 
-### Option 1 — Direct Open
+### Option 1 — Direct Open (Simplest)
 ```bash
-# Clone the repo
 git clone https://github.com/riyaraghuwanshi1807-ai/microproject-1.git
-
-# Open index.html directly in your browser
-# No server needed!
+cd microproject-1
+# Double-click index.html or drag it into your browser
 ```
 
 ### Option 2 — VS Code Live Server
-1. Install the **Live Server** extension in VS Code
-2. Open the project folder
+1. Install **Live Server** extension in VS Code
+2. Open the `microproject-1` folder
 3. Right-click `index.html` → **Open with Live Server**
-4. Site opens at `http://127.0.0.1:5500`
+4. Opens at `http://127.0.0.1:5500`
 
 ### Option 3 — Python HTTP Server
 ```bash
 cd microproject-1
 python -m http.server 8000
-# Open http://localhost:8000
+# Visit http://localhost:8000
 ```
 
-> ✅ No npm, no node_modules, no build step required.
+### Option 4 — Node.js HTTP Server
+```bash
+cd microproject-1
+npx serve .
+# Visit the URL shown in terminal
+```
+
+> ✅ No `npm install`, no `node_modules`, no build step. Pure HTML/CSS/JS.
 
 ---
 
-## 🌍 Deployment
+## 🌍 Deployment — GitHub Pages
 
-This project is deployed using **GitHub Pages**.
+This project is live on **GitHub Pages** (free static hosting).
 
-### Deployment Steps:
+### Steps to Deploy:
 1. Push all files to the `main` branch
-2. Go to repo **Settings → Pages**
-3. Set Source: `main` branch, `/ (root)` folder
+2. Go to repo → **Settings → Pages**
+3. Under **Source**, select: Branch `main`, Folder `/ (root)`
 4. Click **Save**
-5. Site goes live at: `https://<username>.github.io/<repo-name>/`
+5. Wait ~2 minutes for deployment
 
 ### Live URL:
 ```
 https://riyaraghuwanshi1807-ai.github.io/microproject-1/
 ```
 
-### `.nojekyll` file:
-A `.nojekyll` file is included in the root to prevent GitHub Pages from processing the site through Jekyll, ensuring all files are served as-is.
+### Why `.nojekyll`?
+The `.nojekyll` file in the root tells GitHub Pages to skip Jekyll processing and serve all files as-is. Without it, files starting with `_` may be ignored.
+
+---
+
+## 🔧 Git Workflow
+
+```bash
+# Clone
+git clone https://github.com/riyaraghuwanshi1807-ai/microproject-1.git
+
+# Check status
+git status
+
+# Stage all changes
+git add .
+
+# Commit
+git commit -m "Your commit message"
+
+# Push to GitHub
+git push origin main
+```
+
+### Commit History:
+| Commit | Description |
+|---|---|
+| `Initial commit` | README created |
+| `Add complete LifeDrop blood donation website` | All 5 pages + CSS + JS |
+| `Add .nojekyll for GitHub Pages` | GitHub Pages config |
+| `Add full project documentation to README` | First full README |
+| `Redesign: Modern theme with glassmorphism...` | Full UI redesign with animations |
+| `Add full project documentation to README` | This updated documentation |
 
 ---
 
 ## 🔮 Future Improvements
 
-- [ ] Backend integration (Node.js / Firebase) for real donor database
+### Backend & Database
+- [ ] Firebase / Supabase integration for real donor database
 - [ ] User authentication — login/signup for donors
-- [ ] Real-time donor availability status
+- [ ] Real-time donor availability status (online/offline)
+- [ ] Admin dashboard to manage registrations
+
+### Features
 - [ ] Email/SMS notifications for emergency requests
-- [ ] Google Maps integration to show nearby blood banks
-- [ ] Admin dashboard to manage donor registrations
-- [ ] Blood donation camp event listings
-- [ ] Multi-language support (Hindi, regional languages)
-- [ ] PWA (Progressive Web App) support for offline access
+- [ ] Google Maps to show nearby blood banks and camps
+- [ ] Blood donation camp event calendar
+- [ ] Donor milestone badges (5 donations, 10 donations, etc.)
+- [ ] Blood compatibility chart (who can donate to whom)
+
+### Technical
+- [ ] PWA (Progressive Web App) — offline support + install prompt
 - [ ] Dark mode toggle
+- [ ] Multi-language support (Hindi, Tamil, Telugu, etc.)
+- [ ] Accessibility improvements (ARIA labels, keyboard nav)
+- [ ] Performance optimization (lazy loading, image compression)
 
 ---
 
@@ -477,15 +622,17 @@ A `.nojekyll` file is included in the root to prevent GitHub Pages from processi
 
 **Riya Raghuwanshi**
 
-- 🐙 GitHub: [@riyaraghuwanshi1807-ai](https://github.com/riyaraghuwanshi1807-ai)
-- 🌐 Project: [LifeDrop Blood Donation Website](https://riyaraghuwanshi1807-ai.github.io/microproject-1/)
+| Platform | Link |
+|---|---|
+| 🐙 GitHub | [@riyaraghuwanshi1807-ai](https://github.com/riyaraghuwanshi1807-ai) |
+| 🌐 Live Project | [LifeDrop Blood Donation Website](https://riyaraghuwanshi1807-ai.github.io/microproject-1/) |
 
 ---
 
 ## 📃 License
 
-This project is open source and available for **educational purposes**.  
-Feel free to fork, modify, and use it for your own projects.
+This project is **open source** and available for educational purposes.
+Feel free to fork, modify, and use it for your own projects with attribution.
 
 ---
 
@@ -493,6 +640,6 @@ Feel free to fork, modify, and use it for your own projects.
 
 Made with ❤️ to save lives
 
-🩸 **[Visit LifeDrop Live](https://riyaraghuwanshi1807-ai.github.io/microproject-1/)** 🩸
+**🩸 [Visit LifeDrop Live →](https://riyaraghuwanshi1807-ai.github.io/microproject-1/) 🩸**
 
 </div>
